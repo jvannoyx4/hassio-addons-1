@@ -1,19 +1,19 @@
 {
-    "name": "deCONZ",
+    "name": "Jvannoyx4 deCONZ",
     "version": "2.05.66",
     "slug": "deconz",
     "description": "Control a ZigBee network with Conbee or RaspBee by Dresden Elektronik",
     "arch": ["amd64","armhf","aarch64"],
-    "url": "https://github.com/marthoc/hassio-addons",
+    "url": "https://github.com/jvannoyx4/hassio-addons-1",
     "startup": "initialize",
     "boot": "auto",
-    "webui": "http://[HOST]:[PORT:8080]",
+    "webui": "http://[HOST]:[PORT:8082]",
     "host_network": true,
     "auto_uart": true,
     "options": {
         "deconz_device": null,
-        "web_port": 8080,
-        "websockets_port": 8443,
+        "web_port": 8082,
+        "websockets_port": 8444,
         "debug_info": 1,
         "debug_aps": 0,
         "debug_zcl": 0,
@@ -21,7 +21,7 @@
         "debug_otau": 0,
         "vnc": {
           "active": false,
-          "port": 5900,
+          "port": 5901,
           "password": "changeme"
         }
     },
@@ -36,7 +36,7 @@
         "debug_otau": "int(0,1)",
         "vnc": {
           "active": "bool",
-          "port": "int(5900,5999)",
+          "port": "int(5901,5998)",
           "password": "str"
         }
     },
